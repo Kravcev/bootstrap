@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -49,21 +50,12 @@
             </div>
         </div>
     </nav>
+
     <div class="card-box">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/1-1.jpg" class="card-img-top" alt="картинка-1">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
-                            естественного перехода к дополнительному контенту.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/2-1.jpg" class="card-img-top" alt="картинка-2">
+                    <img src="img/Карточка-2.jpg" class="card-img-top" alt="картинка-2">
                     <div class="card-body">
                         <h5 class="card-title">Заголовок карточки</h5>
                         <p class="card-text">Это короткая карточка.</p>
@@ -72,7 +64,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/3-1.jpg" class="card-img-top" alt="картинка-3">
+                    <img src="img/Карточка-3.jpg" class="card-img-top" alt="картинка-3">
                     <div class="card-body">
                         <h5 class="card-title">Заголовок карточки</h5>
                         <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
@@ -82,7 +74,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/4-1.jpg" class="card-img-top" alt="картинка-4">
+                    <img src="img/3.jpg" class="card-img-top" alt="картинка-4">
                     <div class="card-body">
                         <h5 class="card-title">Заголовок карточки</h5>
                         <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
@@ -93,9 +85,32 @@
         </div>
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Особое обращение с заголовком</h5>
+              <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
+              <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Особое обращение с заголовком</h5>
+              <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
+              <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="carouselExampleIndicators" data-bs-ride="carousel" data-bs-interval="4000" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+            
+          </button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
@@ -129,15 +144,44 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
           <span class="visually-hidden">Предыдущий</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
           <span class="visually-hidden">Следующий</span>
         </button>
       </div>
 
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+              </svg> Bootstrap
+          </a>
+        </div>
+      </nav>
+      
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Активная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Отключенная</a>
+        </li>
+      </ul>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
