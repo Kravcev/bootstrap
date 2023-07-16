@@ -1,14 +1,1 @@
-
-.logo {
-  height: 40px;
-}
-
-.card-box {
-  padding: 20px;
-  background-color: #faf1d4;
-}
-.card-img-top {
-  width: auto;
-}
-
-
+.logo{height:40px}.card-box{padding:30px;background-color:#f4dcae}.carousel-item{position:relative}.carousel-item img{height:650px;object-fit:cover}.content{position:absolute;min-width:900px;right:13%;left:13%;bottom:20%;z-index:2;color:white}.overlay{position:absolute;width:100%;height:100%;background-color:black;opacity:0.2}
